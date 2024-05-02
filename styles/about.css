@@ -3,9 +3,9 @@ padding: 0;
 margin: 0;
 }
 
-.about_des{
-    /* border: 1px solid red; */
-}
+/* .about_des{
+    border: 1px solid red;
+} */
 .header-head{
     background-image: url(../images/bg.jpg);
     height: 120vh;
@@ -117,4 +117,13 @@ img{
     height: 220vh;
     padding-bottom: 2rem;
 }
+}
+
+@media screen and (max-width:600px) {
+    .hero-section-big-div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
 }
