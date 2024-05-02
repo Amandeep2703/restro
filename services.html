@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <style>
+        .child {
+            /* border: 2px solid blue; */
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .child-div {
+            margin-top: 50px;
+            /* border: 2px solid red; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .child-div {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* CSS rules for screens with a width between 600px and 900px */
+       
+    </style>
+</head>
+<link rel="stylesheet" href="./styles/services.css">
+<link rel="stylesheet" href="./styles/style.css">
+
+<body>
+    <header class="header">
+        <img src="./images/logo1.png" alt="logo" class="logo" style="width: 3rem;">
+        <nav class="navbar">
+            <ul class="navbar-lists">
+                <li><a href="./index.html" class="navbar-link home-link">Home</a></li>
+                <li><a href="./about.html" class="navbar-link home-link">About</a></li>
+                <li><a href="./Contact.html" class="navbar-link home-link">Contact Us</a></li>
+                <li><a href="./services.html" class="navbar-link home-link">Services</a></li>
+            </ul>
+        </nav>
+        <button class="book-now-btn">
+            <a href="./booking.html"><p>Book Now</p></a>
+        </button>
+        <!-- Mobile menu navbar -->
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+        <!-- <img class="bg" src="./images/bg.jpg" alt="bg"> -->
+
+    </header>
+    <div class="container">
+        <h1 style="margin-top: 20px;">Our Services</h1>
+        <div class="child-div">
+            <div class="child div1">
+                <img src="images/fineDineImg.avif" alt="">
+                <h1>Special reservation</h1>
+            </div>
+            <div class="child div2">
+                <img src="images/fineDineCatteringServices.jpg" alt="">
+                <h1>Royal catering</h1>
+            </div>
+            <div class="child div3">
+                <img src="images/fineDineImg3FoodDelivery.avif" alt="">
+                <h1>Online Order</h1>
+            </div>
+            
+        </div>
+        <div class="heading1" style="margin-top: 50px;">
+           <h1> To know more please visit Contact page....</h1>
+        </div>
+    </div>
+</body>
+
+</html>

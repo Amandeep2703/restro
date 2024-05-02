@@ -1,0 +1,24 @@
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-image: url(../images/bgy.jpg);
+}
+h4{
+    margin-top: 10rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* header styling */
+

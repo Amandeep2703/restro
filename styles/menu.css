@@ -1,0 +1,364 @@
+*{
+padding: 0;
+margin: 0;
+}
+.header-container{
+    background-image: linear-gradient(45deg, rgb(134, 45, 4), rgb(252, 96, 40));
+    height: 600vh;
+    width: 100%;
+}
+
+.Our-menu{
+    height: 60vh;
+    width: 80%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: 1px solid black; */
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 3rem;
+}
+
+.thalis h1{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: .5rem;
+}
+
+
+.item-container{
+    /* border: 1px solid blue; */
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 2rem;
+  
+}
+.item-container .Items{
+    /* border: 1px solid black; */
+    display: flex;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.food-items{
+    width: 50%;
+    margin-left: 2rem;
+    margin-bottom: .2rem;
+}
+.item-price{
+    width: 10%;
+    margin-left: 20rem;
+}
+
+/* Braskfast - dishes */
+.bf-dishes{
+    display: flex;
+    gap: 4rem;
+    margin-left: 6rem;
+}
+
+
+ .breakfast{
+     /* border: 1px solid rgb(246, 240, 240); */
+     height: 40rem;
+     width: 30rem;
+     margin-top: 2rem;
+ }
+
+ .breakfast h1{
+     text-align: center;
+     color: rgb(252, 250, 250);
+     background-color: black;
+ }
+.breakfast-container{
+    display: flex;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.bf-items{
+    width: 10rem;
+    margin-left: 2rem;
+}
+
+.bf-price{
+    width: 5rem;
+    margin-left: 4rem;
+}
+
+
+.dishes{
+    /* border: 1px solid rgb(246, 240, 240); */
+    height: 40rem;
+    width: 30rem;
+    margin-top: 2rem;
+}
+.dishes h1{
+    text-align: center;
+    color: rgb(252, 250, 250);
+    background-color: black;
+}
+.dishes-container{
+   display: flex;
+   font-size: 1.2rem;
+   margin-top: 1rem;
+}
+.dish-items{
+   width: 10rem;
+   margin-left: 2rem;
+}
+
+.dish-price{
+   width: 5rem;
+   margin-left: 4rem;
+}
+
+/* Responsive area */
+
+@media(max-width:980px) {
+    .header{
+        position: relative;
+    }
+
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 9999;
+        border: 2px solid rgb(250, 245, 245);
+
+        margin-top: -1rem;
+border-style: none;
+margin-right: 1.5rem;
+    }
+
+    .mobile-nav-icon{
+        width: 5rem;
+        height: 5rem;
+        color: var(--black);
+    }
+    .header .logo{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 140vh;
+        position: absolute;
+        top: -1rem;
+        left: 0;
+        background: var(--gradient);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all .5s linear;
+
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none ;
+        z-index: 999;
+    }
+
+    .navbar-lists{
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+        margin-top: -20rem;
+    }
+
+    .navbar .navbar-lists .navbar-link:link,
+    .navbar .navbar-lists .navbar-link:visited{
+        color: rgb(249, 245, 245);
+        font-size: 2rem;
+    }
+
+.active .navbar{
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+    display: none;
+}
+.active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]
+{
+    display: block;
+}
+
+/* btn hamburger */
+.mobile-nav-icon{
+    border: 2px solid white;
+    height: 3rem;
+    width: 3rem;
+}
+}
+
+@media (max-width:415px) {
+    .mobile-navbar-btn{
+        height:3rem;
+        color: white;
+        /* width: 100%; */
+margin-top: -1rem;
+border-style: none;
+margin-right: 1.5rem;
+    }
+.mobile-nav-icon{
+height: 2.9rem;
+width: 3rem;
+border: 2px solid white;
+}
+
+.navbar{
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--gradient);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all .5s linear;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none ;
+
+    margin-top: -1rem;
+}
+
+.navbar-lists{
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .navbar-lists .navbar-link:link,
+.navbar .navbar-lists .navbar-link:visited{
+
+    color: rgb(249, 245, 245);
+    font-size: 3rem;
+}
+
+.active .navbar{
+transform: translateX(0%);
+visibility: visible;
+opacity: 1;
+pointer-events: auto;
+}
+
+.active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+display: none;
+}
+.active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]
+{
+display: block;
+}
+
+.navbar .navbar-lists .navbar-link:link{
+    font-size: 1.5rem;
+
+    
+}
+
+.navbar .navbar-lists{
+    margin-top: -18rem ;
+}
+
+.book-now-btn {
+    background-color: rgb(224, 217, 21);
+    height: 3rem;
+     width: 8rem;
+     /* float: right; */
+     margin-left: .5rem;
+     margin-right: 0rem;
+     color: white;
+     border: 2px solid white;
+     margin-top: 1rem;
+     
+}
+.book-now-btn p{
+    font-size: 1.2rem;
+}
+
+.header-container{
+    background-image: linear-gradient(45deg, rgb(134, 45, 4), rgb(252, 96, 40));
+    height: 1920vh;
+    width: 100%;
+}
+
+
+/* Thalis  */
+.thalis{
+    margin-right: 2rem;
+    margin-left: -10rem;
+    
+}
+
+.item-container{
+    /* border: 1px solid rgb(10, 7, 7); */
+    margin-left:.5rem ;
+    margin-right:.5rem ;
+}
+.Items{
+    width: 25rem;
+    /* border: 1px solid black; */
+    text-align: center;
+
+}
+.thalis h1{
+    font-size: 1.7rem;
+}
+.food-items{
+    font-size: 1.2rem;
+}
+.item-price{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* border: 1px solid black; */
+    width: 8rem;
+    font-size: 1.2rem;
+}
+
+.bf-dishes{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    margin-left: -10rem;
+}
+.breakfast h1{
+    text-align: center;
+    margin-left: -2rem;
+    margin-left: -6rem;
+    /* border: 1px solid blue; */
+
+}
+
+.dishes{
+    /* border: 2px solid yellow; */
+    margin-top: 170rem;
+}
+.dishes h1{
+    /* margin-right: -5rem; */
+    margin-left: -5.5rem;
+}
+/* .Our-menu{
+    height: 60vh;
+    width: auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: 1px solid black; */
+    /* margin-left: 1rem; */
+    /* margin-right: rem; */
+    /* margin-top: 3rem; */
+/* } */ 
+}

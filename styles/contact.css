@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    background-image: url(../images/bgy.jpg);
+    box-sizing: border-box;
+}
+
+.h2-contact{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: pink;
+}
+.container-contact{
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-contact .child_div-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    flex-direction: column;
+}
+.social-link-contact{
+gap: 1rem;
+}
+.social-icon{
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+}
+.social-link-contact a {
+    font-size: 4rem;
+    color: pink;
+}
