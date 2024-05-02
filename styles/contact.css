@@ -38,3 +38,13 @@ gap: 1rem;
     font-size: 4rem;
     color: pink;
 }
+
+@media screen and (max-width:500px) {
+    .social-link-contact{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
